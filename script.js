@@ -25,7 +25,8 @@ function update_cart() {
 function total_cost() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   let element_cart_total = document.getElementById('cart-total');
-  element_cart_total.innerText = items_total_price.reduce((a,b) => a+b, 0);
+  let total = items_total_price.reduce((a, b) => a + b, 0);
+  element_cart_total.innerText = total.toFixed(2);
 }
 
 // Describe this function...
@@ -83,8 +84,8 @@ document.getElementById('add-cheese').addEventListener('click', (event) => {
 document.getElementById('add-bread').addEventListener('click', (event) => {
   items.push('Bread 750g');
   items.push(1);
-  items.push('3,00€');
-  items_total_price.push(3);
+  items.push('2,85€');
+  items_total_price.push(2.85);
   update_cart();
   total_cost();
 
@@ -93,8 +94,8 @@ document.getElementById('add-bread').addEventListener('click', (event) => {
 document.getElementById('add-eggs').addEventListener('click', (event) => {
   items.push('Eggs Pack of 6');
   items.push(1);
-  items.push('1,75€');
-  items_total_price.push(1.75);
+  items.push('1,70€');
+  items_total_price.push(1.7);
   update_cart();
   total_cost();
 
@@ -113,8 +114,8 @@ document.getElementById('add-milk').addEventListener('click', (event) => {
 document.getElementById('add-cookies').addEventListener('click', (event) => {
   items.push('Cookies 150g');
   items.push(1);
-  items.push('2,50€');
-  items_total_price.push(2.5);
+  items.push('2,35€');
+  items_total_price.push(2.35);
   update_cart();
   total_cost();
 
@@ -123,8 +124,8 @@ document.getElementById('add-cookies').addEventListener('click', (event) => {
 document.getElementById('add-olive-oil').addEventListener('click', (event) => {
   items.push('Olive Oil 1L');
   items.push(1);
-  items.push('10,95€');
-  items_total_price.push(10.95);
+  items.push('10,90€');
+  items_total_price.push(10.9);
   update_cart();
   total_cost();
 
@@ -133,8 +134,48 @@ document.getElementById('add-olive-oil').addEventListener('click', (event) => {
 document.getElementById('add-water').addEventListener('click', (event) => {
   items.push('Water Pack of 6');
   items.push(1);
-  items.push('3,95€');
-  items_total_price.push(3.95);
+  items.push('3,75€');
+  items_total_price.push(3.75);
+  update_cart();
+  total_cost();
+
+});
+
+document.getElementById('add-flour').addEventListener('click', (event) => {
+  items.push('Flour 1kg');
+  items.push(1);
+  items.push('1,80€');
+  items_total_price.push(1.8);
+  update_cart();
+  total_cost();
+
+});
+
+document.getElementById('add-juice').addEventListener('click', (event) => {
+  items.push('Apple Juice');
+  items.push(1);
+  items.push('2,50€');
+  items_total_price.push(2.5);
+  update_cart();
+  total_cost();
+
+});
+
+document.getElementById('add-ketchup').addEventListener('click', (event) => {
+  items.push('Ketchup');
+  items.push(1);
+  items.push('3,35€');
+  items_total_price.push(3.35);
+  update_cart();
+  total_cost();
+
+});
+
+document.getElementById('add-yogurt').addEventListener('click', (event) => {
+  items.push('Yogurt');
+  items.push(1);
+  items.push('1,60€');
+  items_total_price.push(1.6);
   update_cart();
   total_cost();
 

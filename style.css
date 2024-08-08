@@ -9,21 +9,21 @@ header {
   color: white;
 }
 
-.header-container {
+.header-container h1 {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 2.4rem;
   margin: 0;
   display: flex;
   align-items: center;
+  text-shadow: #a6a6a6c5 1px 0 3px;
 }
 
 #logo img {
-  max-height: 50px;
+  max-height: 80px;
   margin-left: 10px; /* Space between text and logo */
 }
 
@@ -34,6 +34,7 @@ h1 {
 
 .container h3 {
   /* font-weight: 800; */
+  font-size: 1.8rem;
   text-align: center;
   text-shadow: #333 1px 0 3px;
 }
@@ -89,6 +90,13 @@ p {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
+}
+
+td div {
+  margin: 5px 0;
+  border-bottom: 1px solid #3333332a;
+}
+.cart #name div {
 }
 
 .cart-summary {
