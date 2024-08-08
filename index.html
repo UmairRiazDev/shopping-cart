@@ -2,81 +2,82 @@
 
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <div class="header-container">
+        <h1>
+          CYF Online Grocery Market
+          <span id="logo">
+            <img src="https://i.ibb.co/TKdbFhN/CYF-market-logo.png" alt="Logo"
+          /></span>
+        </h1>
+      </div>
+    </header>
 
-      <header>
-        <div class="header-container">
-          <h1>CYF Online Grocery Market <span id="logo">
-          <img src="https://i.ibb.co/TKdbFhN/CYF-market-logo.png" alt="Logo"/></h1>
-        </div>
-      </header>
-
-      <div class="container">
-        <h2>Product Catalog</h2>
-        <div class="product-catalog">
-
-          <div class="product" data-id="1" data-price="1">
-            <img src="https://i.ibb.co/bF9mdYg/baguette.png" alt="baguette picture" />
-            <h3>Baguette 250g</h3>
-            <p>Price: 1,00€</p>
-            <button onclick="addToCard(1)">Add to Cart</button>
-          </div>
-
-          <div class="product" data-id="1" data-price="3">
-            <img src="https://i.ibb.co/d5r6tLY/bread-loaf.png" alt="Bread Loaf picture" />
-            <h3>Bread Loaf 750g</h3>
-            <p>Price: 3,00€</p>
-            <button onclick="addToCard(1)">Add to Cart</button>
-          </div>
-
-          <div class="product" data-id="1" data-price="5">
-            <img src="https://i.ibb.co/t3fyrwv/cheese.png" alt="cheese picture" />
-            <h3>Cheese 200g</h3>
-            <p>Price: 5,00€</p>
-            <button onclick="addToCard(1)">Add to Cart</button>
-          </div>
-
-          <div class="product" data-id="1" data-price="2.5">
-            <img src="https://i.ibb.co/7StQm96/cookies.png" alt="something" />
-            <h3>Cookies 150g</h3>
-            <p>Price: 2,50€</p>
-            <button onclick="addToCard(1)">Add to Cart</button>
-          </div>
-
+    <div class="container">
+      <h3>Product Catalog</h3>
+      <div class="product-catalog">
+        <div class="product" id="baguette">
+          <img
+            src="https://i.ibb.co/bF9mdYg/baguette.png"
+            alt="baguette picture"
+          />
+          <h4>Baguette 250g</h4>
+          <p>Price: 1,00€</p>
+          <button id="add-bagguette">Add to Cart</button>
         </div>
 
+        <div class="product" id="bread">
+          <img
+            src="https://i.ibb.co/d5r6tLY/bread-loaf.png"
+            alt="Bread Loaf picture"
+          />
+          <h4>Bread 750g</h4>
+          <p>Price: 3,00€</p>
+          <button id="add-bread">Add to Cart</button>
+        </div>
 
-        <!-- Shopping Cart -->
-        <div class="cart">
-          <table id="cart-items">
-            <thead>
-              <th>Product</th>
-              <th>Quantity</th>
-              <th>Price</th>
-              <th>Action</th>
-            </thead>
-            <tbody>
-              <!-- dynamically adding items to the cart -->
-            </tbody>
-          </table>
+        <div class="product" id="cheese">
+          <img src="https://i.ibb.co/t3fyrwv/cheese.png" alt="cheese picture" />
+          <h4>Cheese 200g</h4>
+          <p>Price: 5,00€</p>
+          <button id="add-cheese">Add to Cart</button>
+        </div>
 
-            <div class="cart-summary">
-              <p id="cart-total">Total: 0 €</p>
-              <p id="shipping-fee">Shipping: 5€ (Free shipping over 50€)</p>
-            </div>
+        <div class="product" id="cookies">
+          <img src="https://i.ibb.co/7StQm96/cookies.png" alt="something" />
+          <h4>Cookies 150g</h4>
+          <p>Price: 2,50€</p>
+          <button id="add-cookies">Add to Cart</button>
         </div>
       </div>
 
+      <!-- Shopping Cart -->
+      <div class="cart">
+        <table id="cart-items">
+          <thead>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Action</th>
+          </thead>
+          <tbody>
+            <tr id="items-added"></tr>
+          </tbody>
+        </table>
 
-      </body>
-      <footer><p>Made by Umair Riaz &copy; 2024</p></footer>
-
-
+        <div class="cart-summary">
+          <p>Total: <span id="cart-total">0</span> €</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer><p>Made by Umair Riaz &copy; 2024</p></footer>
 </html>
