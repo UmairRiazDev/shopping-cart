@@ -122,10 +122,11 @@
       </div>
 
       <hr />
+      <!-- Comments section -->
 
       <div id="comments-section">
         <h3>Would do you have to say? Please leave the comment below!</h3>
-        <form action="/">
+        <div class="comments-form">
           <div>
             <label for="customer-name"
               >Name:
@@ -139,12 +140,14 @@
           </div>
           <div>
             <label for="comment">Comment:</label>
-            <textarea name="comment" id="comment">
-What do you have to say...</textarea
-            >
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="What do you have to say..."
+            ></textarea>
           </div>
-          <button type="submit">Submit</button>
-        </form>
+          <button type="submit" id="comment-submit">Submit</button>
+        </div>
 
         <div>
           <ul id="comment-data"></ul>

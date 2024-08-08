@@ -113,7 +113,7 @@ hr {
   margin-top: 80px;
 }
 
-form div {
+.comments-form div {
   margin-bottom: 20px;
 }
 
@@ -121,10 +121,10 @@ form div {
   padding: 20px;
 }
 
-form input {
+.comments-form input {
   width: 48%;
 }
-textarea {
+.comments-form textarea {
   background-color: #3333330c;
   width: 50%;
   height: 100px;
@@ -134,7 +134,7 @@ textarea {
   color: rgb(0, 0, 0);
 }
 
-form button {
+.comments-form button {
   padding: 8px 30px;
   font-size: 18px;
   background-color: #333333;
@@ -144,7 +144,7 @@ form button {
   border-radius: 5px;
 }
 
-form button:hover {
+.comments-form button:hover {
   background-color: #333333bb;
 }
 /* #remove button {
