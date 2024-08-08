@@ -25,38 +25,58 @@
           <div class="product" data-id="1" data-price="1">
             <img src="https://i.ibb.co/bF9mdYg/baguette.png" alt="baguette picture" />
             <h3>Baguette 250g</h3>
-            <p>Price: 1,00 €</p>
+            <p>Price: 1,00€</p>
             <button onclick="addToCard(1)">Add to Cart</button>
           </div>
 
           <div class="product" data-id="1" data-price="3">
             <img src="https://i.ibb.co/d5r6tLY/bread-loaf.png" alt="Bread Loaf picture" />
             <h3>Bread Loaf 750g</h3>
-            <p>Price: 3,00 €</p>
+            <p>Price: 3,00€</p>
             <button onclick="addToCard(1)">Add to Cart</button>
           </div>
 
           <div class="product" data-id="1" data-price="5">
             <img src="https://i.ibb.co/t3fyrwv/cheese.png" alt="cheese picture" />
             <h3>Cheese 200g</h3>
-            <p>Price: 5,00 €</p>
+            <p>Price: 5,00€</p>
             <button onclick="addToCard(1)">Add to Cart</button>
           </div>
 
           <div class="product" data-id="1" data-price="2.5">
             <img src="https://i.ibb.co/7StQm96/cookies.png" alt="something" />
             <h3>Cookies 150g</h3>
-            <p>Price: 2,50 €</p>
+            <p>Price: 2,50€</p>
             <button onclick="addToCard(1)">Add to Cart</button>
           </div>
 
         </div>
+
+
+        <!-- Shopping Cart -->
+        <div class="cart">
+          <table id="cart-items">
+            <thead>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Action</th>
+            </thead>
+            <tbody>
+              <!-- dynamically adding items to the cart -->
+            </tbody>
+          </table>
+
+            <div class="cart-summary">
+              <p id="cart-total">Total: 0 €</p>
+              <p id="shipping-fee">Shipping: 5€ (Free shipping over 50€)</p>
+            </div>
+        </div>
       </div>
 
 
-
       </body>
-      <footer><p style="font-size:0.8rem;text-align:right;color:#444;">Made by Umair Riaz &copy; 2024</p></footer>
+      <footer><p>Made by Umair Riaz &copy; 2024</p></footer>
 
 
 </html>

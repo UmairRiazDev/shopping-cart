@@ -41,7 +41,7 @@ h1 {
   border: 1px solid #ccc;
   padding: 12px;
   text-align: center;
-  width: 25%;
+  width: 20%;
   margin: 1%;
 }
 
@@ -67,4 +67,37 @@ p {
 
 .product button:hover {
   background-color: #333333bb;
+}
+
+.cart {
+  margin-top: 40px;
+}
+
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart th,
+.cart td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-summary p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+footer p {
+  margin-top: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: #333;
 }
