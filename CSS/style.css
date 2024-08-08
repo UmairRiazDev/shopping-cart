@@ -1,0 +1,183 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+#logo img {
+  max-height: 50px;
+  margin-left: 10px; /* Space between text and logo */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container h3 {
+  /* font-weight: 800; */
+  text-align: center;
+  text-shadow: #333 1px 0 3px;
+}
+
+.product-catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  width: 20%;
+  margin: 1%;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.product h4,
+p {
+  margin: 10px 0;
+}
+
+.product button {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product button:hover {
+  background-color: #333333bb;
+}
+
+.cart {
+  margin-top: 40px;
+}
+
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart th,
+.cart td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-summary p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+#comments-section {
+  max-width: 1200;
+  margin: 0 auto;
+  text-align: center;
+}
+
+hr {
+  border: 2px solid #eee;
+  max-width: 50%;
+  margin-top: 80px;
+}
+
+.comments-form div {
+  margin-bottom: 20px;
+}
+
+#comment {
+  padding: 20px;
+}
+
+.comments-form input {
+  width: 48%;
+}
+.comments-form textarea {
+  background-color: #3333330c;
+  width: 50%;
+  height: 100px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+}
+
+.comments-form button {
+  padding: 8px 30px;
+  font-size: 18px;
+  background-color: #333333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.comments-form button:hover {
+  background-color: #333333bb;
+}
+/* #remove button {
+  display: block;
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  margin: 0 auto;
+  margin-bottom: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+} */
+
+footer p {
+  margin-top: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: #333;
+}
+
+#comment-data div {
+  padding-right: 20px;
+  font-weight: 600;
+  color: black;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#comment-data span {
+  font-weight: 400;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 16px;
+  text-align: right;
+}
