@@ -1,68 +1,70 @@
 body {
-    font-family: sans-serif;
-    padding: 20px;
+  font-family: sans-serif;
+  padding: 20px;
 }
 
 header {
-    background-color: #333;
-    padding: 10px 20px;
-    color: white;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
-    font-size: 24px;
-    margin: 0;
-    display: flex;
-    align-items: center;
+  font-size: 24px;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 #logo img {
-    max-height: 50px;
-    margin-left: 10px; /* Space between text and logo */
+  max-height: 50px;
+  margin-left: 10px; /* Space between text and logo */
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .product-catalog {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product {
-    border: 1px solid #ccc;
-    padding: 12px;
-    text-align: center;
-    width: 25%;
-    margin: 1%;
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  width: 25%;
+  margin: 1%;
 }
 
 .product img {
-    /*max-width: 100%;*/
-    height: 150px;
-    width: 150px;
+  /*max-width: 100%;*/
+  height: 150px;
+  width: 150px;
 }
 
-.product h3, p {
-    margin: 10px 0;
+.product h3,
+p {
+  margin: 10px 0;
 }
 
 .product button {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .product button:hover {
-    background-color: green;
+  background-color: #333333bb;
 }
