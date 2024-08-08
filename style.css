@@ -1,0 +1,23 @@
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    max-height: 50px;
+    margin-left: 10px; /* Space between text and logo */
+}
