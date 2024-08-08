@@ -171,6 +171,7 @@ footer p {
   font-weight: 600;
   color: black;
   border: 1px solid #ccc;
+  text-align: left;
 }
 
 #comment-data span {
@@ -178,4 +179,6 @@ footer p {
   color: #333;
   font-style: italic;
   margin-bottom: 16px;
+  content: "---";
+  text-align: right;
 }
