@@ -1,3 +1,8 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
 header {
     background-color: #333;
     padding: 10px 20px;
@@ -20,4 +25,14 @@ h1 {
 #logo img {
     max-height: 50px;
     margin-left: 10px; /* Space between text and logo */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-catalog {
+    display: flex;
+    flex-wrap: wrap;
 }
