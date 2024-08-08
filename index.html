@@ -29,9 +29,9 @@
             src="https://i.ibb.co/bF9mdYg/baguette.png"
             alt="baguette picture"
           />
-          <h4>Baguette 250g</h4>
+          <h4 id="item-baguette">Baguette 250g</h4>
           <p>Price: 1,00€</p>
-          <button id="add-bagguette">Add to Cart</button>
+          <button id="add-baguette">Add to Cart</button>
         </div>
 
         <div class="product" id="bread">
@@ -39,21 +39,21 @@
             src="https://i.ibb.co/d5r6tLY/bread-loaf.png"
             alt="Bread Loaf picture"
           />
-          <h4>Bread 750g</h4>
+          <h4 id="item-bread">Bread 750g</h4>
           <p>Price: 3,00€</p>
           <button id="add-bread">Add to Cart</button>
         </div>
 
         <div class="product" id="cheese">
           <img src="https://i.ibb.co/t3fyrwv/cheese.png" alt="cheese picture" />
-          <h4>Cheese 200g</h4>
+          <h4 id="item-cheese">Cheese 200g</h4>
           <p>Price: 5,00€</p>
           <button id="add-cheese">Add to Cart</button>
         </div>
 
         <div class="product" id="cookies">
           <img src="https://i.ibb.co/7StQm96/cookies.png" alt="something" />
-          <h4>Cookies 150g</h4>
+          <h4 id="item-cookies">Cookies 150g</h4>
           <p>Price: 2,50€</p>
           <button id="add-cookies">Add to Cart</button>
         </div>
@@ -69,7 +69,12 @@
             <th>Action</th>
           </thead>
           <tbody>
-            <tr id="items-added"></tr>
+            <tr>
+              <td id="name"></td>
+              <td id="quantity"></td>
+              <td id="price"></td>
+              <td id="price"></td>
+            </tr>
           </tbody>
         </table>
 
