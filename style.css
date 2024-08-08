@@ -165,3 +165,17 @@ footer p {
   text-align: center;
   color: #333;
 }
+
+#comment-data div {
+  padding-right: 20px;
+  font-weight: 600;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+#comment-data span {
+  font-weight: 400;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 16px;
+}
