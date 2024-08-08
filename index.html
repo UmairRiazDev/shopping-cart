@@ -52,10 +52,50 @@
         </div>
 
         <div class="product" id="cookies">
-          <img src="https://i.ibb.co/7StQm96/cookies.png" alt="something" />
+          <img
+            src="https://i.ibb.co/7StQm96/cookies.png"
+            alt="cookies picture"
+          />
           <h4 id="item-cookies">Cookies 150g</h4>
           <p>Price: 2,50€</p>
           <button id="add-cookies">Add to Cart</button>
+        </div>
+
+        <div class="product" id="eggs">
+          <img src="https://i.ibb.co/HngckBd/eggs.png" alt="Eggs picture" />
+          <h4 id="item-eggs">Eggs 6u</h4>
+          <p>Price: 1.75€</p>
+          <button id="add-eggs">Add to Cart</button>
+        </div>
+
+        <div class="product" id="milk">
+          <img
+            src="https://i.ibb.co/3Rf0626/milk.png"
+            alt="Milk packet picture"
+          />
+          <h4 id="item-milk">Milk 1L</h4>
+          <p>Price: 2,00€</p>
+          <button id="add-milk">Add to Cart</button>
+        </div>
+
+        <div class="product" id="olive-oil">
+          <img
+            src="https://i.ibb.co/jRvT2fG/olive-oil.png"
+            alt="Olive oil bottle picture"
+          />
+          <h4 id="item-olive-oil">Olive oil 1L</h4>
+          <p>Price: 10.95€</p>
+          <button id="add-olive-oil">Add to Cart</button>
+        </div>
+
+        <div class="product" id="water">
+          <img
+            src="https://i.ibb.co/C5RFPZb/water.png"
+            alt="Water pack picture"
+          />
+          <h4 id="item-water">Water P6</h4>
+          <p>Price: 3,95€</p>
+          <button id="add-water">Add to Cart</button>
         </div>
       </div>
 
@@ -66,13 +106,11 @@
             <th>Product</th>
             <th>Quantity</th>
             <th>Price</th>
-            <th>Action</th>
           </thead>
           <tbody>
             <tr>
               <td id="name"></td>
               <td id="quantity"></td>
-              <td id="price"></td>
               <td id="price"></td>
             </tr>
           </tbody>
@@ -80,6 +118,36 @@
 
         <div class="cart-summary">
           <p>Total: <span id="cart-total">0</span> €</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div id="comments-section">
+        <h3>Would do you have to say? Please leave the comment below!</h3>
+        <form action="/">
+          <div>
+            <label for="customer-name"
+              >Name:
+              <input
+                type="text"
+                name="customer-name"
+                id="customer-name"
+                placeholder="Enter your name"
+              />
+            </label>
+          </div>
+          <div>
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment">
+What do you have to say...</textarea
+            >
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+
+        <div>
+          <ul id="comment-data"></ul>
         </div>
       </div>
     </div>
