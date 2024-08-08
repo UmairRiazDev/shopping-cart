@@ -147,17 +147,6 @@ hr {
 .comments-form button:hover {
   background-color: #333333bb;
 }
-/* #remove button {
-  display: block;
-  background-color: #333333;
-  color: white;
-  border: none;
-  padding: 3px 6px;
-  margin: 0 auto;
-  margin-bottom: 2px;
-  cursor: pointer;
-  border-radius: 5px;
-} */
 
 footer p {
   margin-top: 50px;
@@ -172,13 +161,18 @@ footer p {
   color: black;
   border: 1px solid #ccc;
   text-align: left;
+  margin-top: 2rem;
 }
 
 #comment-data span {
-  font-weight: 400;
-  color: #333;
-  font-style: italic;
-  margin-bottom: 16px;
-  content: "---";
-  text-align: right;
+  position: relative;
+  font-weight: bold;
+  color: #888; /* Faded color for the name */
+  font-size: 14px;
+  right: 15px; /* Align the name to the right side */
+  bottom: 10px; /* Position the name at the bottom of the container */
+  background-color: #f1f1f1; /* Matches the comment background */
+  padding: 2px 5px; /* Add padding around the name */
+  border-radius: 4px; /* Rounded corners */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
