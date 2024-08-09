@@ -181,9 +181,29 @@ document.getElementById('add-yogurt').addEventListener('click', (event) => {
 
 });
 
-document.getElementById('comment-submit').addEventListener('click', (event) => {
-  comments.push(document.getElementById('customer-name').value);
-  comments.push(document.getElementById('comment').value);
-  display_comments();
+// document.getElementById('comment-submit').addEventListener('click', (event) => {
+//   comments.push(document.getElementById('customer-name').value);
+//   comments.push(document.getElementById('comment').value);
+//   display_comments();
 
+// });
+
+
+//Comments modified to display error message for validating fields
+document.getElementById('comment-submit').addEventListener('click', () => {
+  const nameInput = document.getElementById('customer-name').value.trim();
+  const commentInput = document.getElementById('comment').value.trim();
+  const errorMessageElement = document.getElementById('error-message');
+
+  // Check for empty fields
+  if (!nameInput || !commentInput) {
+    errorMessageElement.innerText = 'Please fill in both fields.';
+    (nameInput ? document.getElementById('comment') : document.getElementById('customer-name')).focus();
+    return;
+  }
+
+  // Clear the error message and process the valid input
+  errorMessageElement.innerText = '';
+  comments.push(nameInput, commentInput);
+  display_comments();
 });

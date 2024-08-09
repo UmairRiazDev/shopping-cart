@@ -69,10 +69,11 @@ p {
   padding: 8px 16px;
   cursor: pointer;
   border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .product button:hover {
-  background-color: #333333bb;
+  background-color: #555;
 }
 
 /* Cart */
@@ -112,59 +113,111 @@ td div {
 }
 
 /* Comments */
-
-#comments-section h3 {
-  /* font-weight: 800; */
-  font-size: 1.4rem;
-  text-align: center;
-  text-shadow: #333 1px 0 3px;
-}
-
 #comments-section {
-  max-width: 1200;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-}
-
-hr {
-  border: 2px solid #eee;
-  max-width: 50%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border-radius: 8px;
   margin-top: 80px;
 }
 
-.comments-form div {
+#comments-section h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  text-shadow: #333 1px 0 3px;
   margin-bottom: 20px;
 }
+
+/* hr {
+  border: 2px solid #eee;
+  max-width: 50%;
+  margin-top: 80px;
+} */
 
 #comment {
   padding: 20px;
 }
 
-.comments-form input {
-  width: 48%;
+.comments-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.comments-form div {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.comments-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.comments-form input,
 .comments-form textarea {
-  background-color: #3333330c;
-  width: 50%;
-  height: 100px;
-  padding: 10px 0;
-  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.comments-form textarea {
+  height: 100px;
+  background-color: #f4f4f4;
+  resize: vertical;
 }
 
 .comments-form button {
-  padding: 8px 30px;
-  font-size: 18px;
-  background-color: #333333;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
   color: white;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .comments-form button:hover {
-  background-color: #333333bb;
+  background-color: #555;
+}
+
+#comment-data div {
+  color: black;
+  border: 1px solid #ccc;
+  text-align: left;
+  margin-top: 2rem;
+  padding: 16px;
+  font-size: 1.1rem;
+}
+
+#comment-data span::before {
+  content: "Commented by:";
+  font-weight: normal;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+#comment-data span {
+  position: relative;
+  font-weight: bold;
+  color: #888;
+  font-size: 1rem;
+  right: 15px;
+  bottom: 10px;
+  background-color: #f1f1f1;
+  padding: 2px 5px;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
 footer p {
@@ -172,26 +225,4 @@ footer p {
   font-size: 12px;
   text-align: center;
   color: #333;
-}
-
-#comment-data div {
-  padding-right: 20px;
-  font-weight: 600;
-  color: black;
-  border: 1px solid #ccc;
-  text-align: left;
-  margin-top: 2rem;
-}
-
-#comment-data span {
-  position: relative;
-  font-weight: bold;
-  color: #888; /* Faded color for the name */
-  font-size: 14px;
-  right: 15px; /* Align the name to the right side */
-  bottom: 10px; /* Position the name at the bottom of the container */
-  background-color: #f1f1f1; /* Matches the comment background */
-  padding: 2px 5px; /* Add padding around the name */
-  border-radius: 4px; /* Rounded corners */
-  white-space: nowrap; /* Prevent text from wrapping */
 }
