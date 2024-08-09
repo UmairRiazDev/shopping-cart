@@ -11,8 +11,9 @@ This application was developed using CYF blocks. However, due to certain limitat
 
 As a [who], I can [what] so that [why]:
 
-1. As a business owner, I want users to add items from our catalog to their cart because I want them to buy items online from our website.
-2. As a business owner, I want users to add multiple quantities of the same item because we don't know how much of an item they need.
-3. As a business owner, I want to display the total cost of the items added to the cart so that users can know how much it would cost them.
-4. As a business owner, I want a section where users can leave their opinions so that we can gather feedback on our online market.
-5. As a business owner, I want the comment section to display the user's name alongside their feedback, so that it's clear who left each comment.
+1. As a business owner, I want to have a visually appealing and simple website for our market, so that customers can easily shop.
+2. As a business owner, I want users to add items from our catalog to their cart because I want them to buy items online from our website.
+3. As a business owner, I want users to add multiple quantities of the same item because we don't know how much of an item they need.
+4. As a business owner, I want to display the total cost of the items added to the cart so that users can know how much it would cost them.
+5. As a business owner, I want a section where users can leave their opinions so that we can gather feedback on our online market.
+6. As a business owner, I want the comment section to display the user's name alongside their feedback, so that it's clear who left each comment.
