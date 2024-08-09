@@ -15,4 +15,4 @@ As a [who], I can [what] so that [why]:
 2. As a business owner, I want users to add multiple quantities of the same item because we don't know how much of an item they need.
 3. As a business owner, I want to display the total cost of the items added to the cart so that users can know how much it would cost them.
 4. As a business owner, I want a section where users can leave their opinions so that we can gather feedback on our online market.
-
+5. As a business owner, I want the comment section to display the user's name alongside their feedback, so that it's clear who left each comment.
