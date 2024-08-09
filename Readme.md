@@ -1,9 +1,11 @@
 ## Creating product catalog with cart for a site
 
 [View this shopping cart on Github](https://umairriazdev.github.io/shopping-cart/)
+
 [View this shopping cart on Netlify](https://cyf-shopping-cart.netlify.app/)
 
 This application was developed using CYF blocks. However, due to certain limitations of CYF blocks, a few functionalities could not be implemented directly within this platform. These can be achieved by writing custom JavaScript code.
+
 
 ## User Stories
 
