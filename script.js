@@ -152,7 +152,7 @@ document.getElementById('add-flour').addEventListener('click', (event) => {
 });
 
 document.getElementById('add-juice').addEventListener('click', (event) => {
-  items.push('Apple Juice');
+  items.push('Apple Juice 1L');
   items.push(1);
   items.push('2,50€');
   items_total_price.push(2.5);
@@ -162,7 +162,7 @@ document.getElementById('add-juice').addEventListener('click', (event) => {
 });
 
 document.getElementById('add-ketchup').addEventListener('click', (event) => {
-  items.push('Ketchup');
+  items.push('Ketchup 450g');
   items.push(1);
   items.push('3,35€');
   items_total_price.push(3.35);
@@ -172,7 +172,7 @@ document.getElementById('add-ketchup').addEventListener('click', (event) => {
 });
 
 document.getElementById('add-yogurt').addEventListener('click', (event) => {
-  items.push('Yogurt');
+  items.push('Yogurt p6x125g');
   items.push(1);
   items.push('1,60€');
   items_total_price.push(1.6);
