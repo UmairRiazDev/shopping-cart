@@ -112,6 +112,30 @@ td div {
   margin: 5px 0;
 }
 
+.cart-total-empty {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-actions button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-actions button:hover {
+  background-color: #555;
+}
+
 /* Comments */
 #comments-section {
   max-width: 1200px;

@@ -21,7 +21,7 @@ function update_cart() {
   items = [];
 }
 
-// Describe this function...
+// Calculate the total cost
 function total_cost() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   let element_cart_total = document.getElementById('cart-total');
@@ -29,7 +29,21 @@ function total_cost() {
   element_cart_total.innerText = total.toFixed(2);
 }
 
-// Describe this function...
+// Empties the cart
+function empty_cart() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_name2 = document.getElementById('name');
+  element_name2.replaceChildren();
+  let element_quantity2 = document.getElementById('quantity');
+  element_quantity2.replaceChildren();
+  let element_price2 = document.getElementById('price');
+  element_price2.replaceChildren();
+  let element_cart_total = document.getElementById('cart-total');
+  element_cart_total.innerText = 0;
+}
+
+
+// displays comments
 function display_comments() {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   let element_comment_data = document.getElementById('comment-data');
@@ -206,4 +220,10 @@ document.getElementById('comment-submit').addEventListener('click', () => {
   errorMessageElement.innerText = '';
   comments.push(nameInput, commentInput);
   display_comments();
+});
+
+// Calling empty cart function
+document.getElementById('empty-cart').addEventListener('click', (event) => {
+  empty_cart();
+
 });
