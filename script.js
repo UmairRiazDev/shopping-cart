@@ -40,6 +40,7 @@ function empty_cart() {
   element_price2.replaceChildren();
   let element_cart_total = document.getElementById('cart-total');
   element_cart_total.innerText = 0;
+  items_total_price = [];
 }
 
 
